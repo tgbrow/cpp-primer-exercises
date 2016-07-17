@@ -1,0 +1,3 @@
+bash doesn't treat a return value of -1 any differently than it treats a return value of 0. However, you can view the
+differing return values by running `echo $?`. Note that the -1 return value displays as 255, likely because the return
+value is interpreted as an 8-bit unsigned value.
