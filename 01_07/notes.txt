@@ -1,4 +1,4 @@
-Trying to compile the program with incorrectly nested comments yields the following error:
+Trying to compile the program (which has incorrectly nested comments) yields the following error:
 
   main.cc:3:35: error: ‘is’ does not name a type
     * Trying to nest like /* this */ is bad news!
