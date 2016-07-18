@@ -1,0 +1,7 @@
+  std::cout << "The sum of " << v1;
+            << " and " << v2;
+            << " is " << v1 + v2 << std::endl;
+
+The given program fragment (above) is not legal due to the semi-colons at the end of the first two lines. More
+specifically, it will not compile because the "<<" operators on the second and third lines have no left-hand argument.
+This issue could easily be fixed by removing the first two semi-colons.
