@@ -1,0 +1,2 @@
+The for loop sums all numbers in range [-100, 100]. The final value of sum is 0, since the contribution of each integer
+in the range is "cancelled out" by its negative.
