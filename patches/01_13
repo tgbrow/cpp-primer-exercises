@@ -1,5 +1,5 @@
 Bottom: b1f08e5c6b8ae127e05ad3273fb33233b411c00b
-Top:    6d35499ef49c8f79164395c87a71de02469b0092
+Top:    766599deadc452338a4f2659d41aa7e821913b07
 Author: Edward "Teddy" Brow <edward.teddy.brow@gmail.com>
 Date:   2017-04-14 19:42:19 -0700
 
@@ -31,3 +31,13 @@ index 0000000..e843d9a
 @@ -0,0 +1,2 @@
 +The for loop sums all numbers in range [-100, 100]. The final value of sum is 0, since the contribution of each integer
 +in the range is "cancelled out" by its negative.
+diff --git a/01_13/main.cc b/01_13/main.cc
+new file mode 100644
+index 0000000..f8b643a
+--- /dev/null
++++ b/01_13/main.cc
+@@ -0,0 +1,4 @@
++int main()
++{
++  return 0;
++}
