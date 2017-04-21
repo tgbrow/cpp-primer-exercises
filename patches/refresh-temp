@@ -1,0 +1,21 @@
+Bottom: 95460fe5374d44c039db936540a7cc68bbf1716c
+Top:    a78169542eca04ec34a3816917462e0dfb6a1eb6
+Author: Edward "Teddy" Brow <edward.teddy.brow@gmail.com>
+Date:   2017-04-21 16:47:58 -0700
+
+Refresh of update-gitignore
+
+---
+
+diff --git a/.gitignore b/.gitignore
+index 2920710..38b4ff7 100644
+--- a/.gitignore
++++ b/.gitignore
+@@ -1,6 +1,7 @@
+ *
+ !*/
+ !*.*
++!*Makefile*
+ 
+ *.o
+ *.swp
