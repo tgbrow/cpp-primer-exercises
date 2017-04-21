@@ -1,0 +1,4 @@
+for loops are most useful when one needs to keep track of some counter or number that is modified in a consistent way
+each iteration through a loop and/or you can predict or compute how many iterations are needed. A while loop, however,
+is more appropriate when one wants to wait to terminate until some condition is met, but it's not possible or not
+straightforward to compute when that will come to pass.
