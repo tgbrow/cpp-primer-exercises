@@ -1,0 +1,29 @@
+Bottom: 94d0d8394687a4a5cc4c6196d53045266f9a9215
+Top:    3dff13771f01b5377ad7f48d1247bb0bb056f945
+Author: Edward "Teddy" Brow <edward.teddy.brow@gmail.com>
+Date:   2017-04-21 17:14:52 -0700
+
+Refresh of 1.16
+
+---
+
+diff --git a/01_16/main.cc b/01_16/main.cc
+index f8b643a..836ae2a 100644
+--- a/01_16/main.cc
++++ b/01_16/main.cc
+@@ -1,4 +1,15 @@
++#include <iostream>
++
+ int main()
+ {
++  int sum = 0, input = 0;
++
++  std::cout << "Please provide a list of whitespace-separated integers to be summed, followed by EOF." << std::endl;
++
++  while (std::cin >> input)
++    sum += input;
++
++  std::cout << "The sum is " << sum << "." << std::endl;
++
+   return 0;
+ }
