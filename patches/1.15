@@ -1,5 +1,5 @@
 Bottom: a784e499230f62a1bb944acb2393419f7679fb0a
-Top:    b196089660f4a68aef85eaec617ad83790c75f52
+Top:    2c45c7e7f6966231cf5b9c5cbf4729e45de293b2
 Author: Edward "Teddy" Brow <edward.teddy.brow@gmail.com>
 Date:   2017-04-21 16:51:57 -0700
 
@@ -20,11 +20,41 @@ index 0000000..fd9f01a
 +	rm main
 diff --git a/01_15/main.cc b/01_15/main.cc
 new file mode 100644
-index 0000000..f8b643a
+index 0000000..160d7cb
 --- /dev/null
 +++ b/01_15/main.cc
-@@ -0,0 +1,4 @@
+@@ -0,0 +1,34 @@
++#include <iostream>
++
++void function_expecting_int_argument(int x)
++{
++  std::cout << x << " + 1 = " << (x + 1) << std::endl;
++}
++
 +int main()
 +{
++  // = SYNTAX ERRORS =
++
++  //std::cout << "What's a semicolon?" << std::endl:
++  // compiler says -> error: expected ‘;’ before ‘:’ token
++
++  //std::cout << missing quotes around literal << std::endl;
++  // compiler says -> error: ‘missing’ was not declared in this scope
++
++  //std::cout << "I sometimes forget operators!" std::endl;
++  // compiler says -> error: expected ‘;’ before ‘std’
++
++
++  // = TYPE ERRORS =
++
++  //function_expecting_int_argument("This string literal is not an int!");
++  // compiler says -> error: invalid conversion from ‘const char*’ to ‘int’ [-fpermissive]
++
++
++  // = DECLARATION ERRORS =
++
++  //std::cout << "I sometimes forget std::" << endl;
++  // compiler says -> error: ‘endl’ was not declared in this scope
++
 +  return 0;
 +}
