@@ -1,5 +1,5 @@
 Bottom: 2c45c7e7f6966231cf5b9c5cbf4729e45de293b2
-Top:    94d0d8394687a4a5cc4c6196d53045266f9a9215
+Top:    3dff13771f01b5377ad7f48d1247bb0bb056f945
 Author: Edward "Teddy" Brow <edward.teddy.brow@gmail.com>
 Date:   2017-04-21 17:09:31 -0700
 
@@ -20,11 +20,22 @@ index 0000000..fd9f01a
 +	rm main
 diff --git a/01_16/main.cc b/01_16/main.cc
 new file mode 100644
-index 0000000..f8b643a
+index 0000000..836ae2a
 --- /dev/null
 +++ b/01_16/main.cc
-@@ -0,0 +1,4 @@
+@@ -0,0 +1,15 @@
++#include <iostream>
++
 +int main()
 +{
++  int sum = 0, input = 0;
++
++  std::cout << "Please provide a list of whitespace-separated integers to be summed, followed by EOF." << std::endl;
++
++  while (std::cin >> input)
++    sum += input;
++
++  std::cout << "The sum is " << sum << "." << std::endl;
++
 +  return 0;
 +}
